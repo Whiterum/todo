@@ -1,0 +1,181 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+p,tr,th,td {
+	margin: 0;
+	padding: 0;
+    style:none;
+}
+a {
+   text-decoration:none;
+   color:rgba(125,77,196,1); 
+}
+a:hover{
+    color:rgba(114,225,20);
+}
+table[name=aimtable]{
+    /*background-color:rgba(224,54,82,1);*/
+    border-collapse:collapse; 
+    border-spacing:0; 
+}
+thead,th{
+    height:30px;
+    background-color:rgba(171,139,224,1);
+}
+tr{
+    height:25px;
+    background-color:rgba(109,232,153,1)
+}
+.show{
+    width:1000px;
+	height:300px;
+	overflow: auto;
+	margin: 20px auto;
+	border:#000 solid 1px;
+    position: relative;
+}
+.inn{
+    width: 500px;
+    margin: 0 auto;
+    position:relative;
+}
+.inn p{
+    width: 500px;
+    height: 100px;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+}
+.contt{
+    width: 500px;
+    height: 96px;
+    text-align: center;
+    border:2px solid #fff;
+    border-radius:10px;
+    background-color: rgba(120,188,227,0.3);
+}
+.contt input{
+    float: left;
+    width: 100px;
+    height: 30px;	
+    float: right;
+    margin-top:-53px;
+    background-color:rgba(148,40,109,0.4);
+    display: none;
+}
+.contt:hover input{
+    display:block;
+}
+.contt input:hover{
+    background-color:rgba(148,40,109,1);
+    color:#fff;
+}
+.from{
+    width: 600px;
+    height: 500px;
+    border: red solid  1px;
+    margin: 0 auto;
+}
+input {
+    margin: 5px;
+    width:240px;
+    height:20px;
+    border-radius:3px;
+    border:1px solid #3a80c8;    
+}
+#serchmit{
+    display:block;
+    width:160px;
+    height:20px;
+    margin: 0 auto;
+    transition: width 1s,background-color 1s,color 1s;
+}
+#serchmit:hover{
+    width:320px;
+    background-color:rgba(225,21,43,1);
+    color:rgba(255,255,255,1);
+}
+#select{
+    width:160px;
+    height:20px;
+    display:block;
+}
+#change{
+    width:160px;
+    height:20px;
+    display:block;
+}
+.slide{
+    width:300px;
+    height:150px;
+    border-radius:6px;
+    display:none;
+    background-color:rgba(255,255,255,1);
+    position:absolute;
+    top:0px;
+    left:370px;
+    z-index:5;
+}
+.cover{
+    width:2000px;
+    height:2000px;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:3;
+    background-color:rgba(0,0,0,0.75);
+    display:none;
+}
+@keyframes aButton {
+    0% { 
+        background-color:rgba(88,192,246,1);
+        color:#000;
+    }
+    100% {
+        background-color:rgba(42,52,186,1);
+        color:#fff;
+    }
+}
+table[name=aimtable] a{
+    width:40px;
+    height:25px;
+    display:block;
+    margin: 0 auto;
+    color:#000;
+    border-radius:3px;
+    text-align:center;
+    line-height:25px;
+    transition:transform 0.2s,width 0.2s,height 0.2s;
+    background-color:rgba(88,192,246,0.75);
+    animation: aButton 3s infinite;
+    animation-direction: alternate;
+}
+table[name=aimtable] a:hover{
+    color:#fff;
+    background-color:rgba(0,0,0,0.25);
+    transform:rotateZ(360deg);
+    width:80px;
+    height:50px;
+    line-height:50px;
+    animation-play-state:paused;
+    font-size:20px;
+    background-color:rgba(255,21,43,1);
+    /*transform:rotateX(360deg);
+    -webkit-transform:rotateX(360deg);*/
+}
+
+table[name=aimtable] td,th {
+    padding:3px;
+    width:200px;
+    margin:2px;
+    border:1px solid #000;
+}
+table[name=aimtable] tr{
+    /*background-color:rgba(239,223,238,1);*/
+    background-color:rgba(155,66,231,0.25);
+}
+table[name=aimtable] th {
+    width:100px;
+}

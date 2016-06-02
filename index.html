@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+<body>
+<div class="main">
+    <div class="show">
+    <div class="iin" id="inn">
+        <table name="aimtable">
+            <thead>
+                <th>姓名</th>
+                <th>内容</th>
+                <th>性别</th>
+                <th>年龄</th>
+                <th>选项</th>
+                <th>选项</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div class="slide"></div>
+    </div>
+    </div>
+    <div class="from">
+        <h4 class="addInner">添加内容</h4>
+        <input type="text" id ="index" placeholder="wirte your name"/>
+        <input type="text" id="serch" placeholder="write your inner">
+        <input type="TEXT" id="sex" placeholder="性别" />
+        <input type="TEXT" id="age" placeholder="年龄" />
+        <input type="TEXT" id="statu" placeholder="婚姻状况" />
+        <input type="TEXT" id="education" placeholder="学历" />
+        <input type="TEXT" id="weight" placeholder="体重" />
+        <input type="submit" id="serchmit" value="添加"><br />
+        <h4>查询</h4>
+        <input type="text" id="serchid" placeholder="请输入查询的id"/>
+        <input type="submit" id="select" value="查询"/><br>
+        <h4>修改</h4>
+        <input type="TEXT" id="changeid" placeholder="请输入修改的id"/>
+        <input type="TEXT" id="changeinner" placeholder="请输入修改内容"/>
+        <input type="TEXT" id="changesex" placeholder="修改性别"/>
+        <input type="TEXT" id="changeage" placeholder="修改年龄"/>
+        <input type="SUBMIT" id="change" value="修改"/>
+    </div>
+</div>
+<div class="cover"></div>
+<script src="lib/require.js" defer async="true" data-main="script/main"></script>
+<script type="text/html" id="modify">
+    {{#ide}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{inner}}</td>
+            <td>{{sex}}</td>
+            <td>{{age}}</td>
+            <td><a href="javascript:;" name="deleters" index={{index}}>删除</a></td>
+            <td><a href="javascript:;" name="detials" index={{index}}>详情</a></td>
+        </tr>
+    {{/ide}}
+</script>
+<script type="text/html" id="modifySlide">
+    {{#ide}}
+        <p>婚姻状况：{{statu}}</p>
+        <p>学历：{{education}}</p>
+        <p>体重：{{weight}}</p>
+        <a href="javascript:;" name="back">隐藏</a>
+    {{/ide}}
+</script>
+</body>
+</html>
