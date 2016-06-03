@@ -95,7 +95,7 @@ define(function(require){
             var cobj = {};
             for(var i=0, len=list.length; i<len; i++){
                 if(list[i].index == cindex){
-                    $('.cover').css('display','block');
+                    $('.cover').fadeIn();
                     $('.slide').slideDown();
                     chtml.ide.push(list[i]);
                     showSlide(chtml);
@@ -158,4 +158,26 @@ define(function(require){
             }
         }
     });
-})
+    as();
+    function as(){    
+      $.ajax({
+
+          type: 'GET',
+          url: 'http://192.168.0.108:8080/why/selects' ,
+          //data: data,
+          dataType: 'jsonp' ,
+          success: function(data){
+              console.log(data);
+              //alert(123);
+          } 
+          //dataType: dataType
+      });
+    }
+    //$.get('http://192.168.0.108:8080/why/selects',function(){
+    //                console.log(12);
+    //                });       
+
+    //};
+    //
+
+})  

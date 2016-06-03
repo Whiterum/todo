@@ -7,6 +7,9 @@ p,tr,th,td {
 	padding: 0;
     style:none;
 }
+body{
+    background:url(../imgs/4.jpg);
+}
 a {
    text-decoration:none;
    color:rgba(125,77,196,1); 
@@ -77,6 +80,7 @@ tr{
     height: 500px;
     border: red solid  1px;
     margin: 0 auto;
+    background-color:rgba(0,150,241,0.5);
 }
 input {
     margin: 5px;
@@ -84,6 +88,7 @@ input {
     height:20px;
     border-radius:3px;
     border:1px solid #3a80c8;    
+    background-color:rgba(255,255,255,0.2);
 }
 #serchmit{
     display:block;
@@ -108,13 +113,13 @@ input {
     display:block;
 }
 .slide{
+    position:fixed;
     width:300px;
     height:150px;
     border-radius:6px;
     display:none;
     background-color:rgba(255,255,255,1);
-    position:absolute;
-    top:0px;
+    top:200px;
     left:370px;
     z-index:5;
 }
@@ -162,8 +167,6 @@ table[name=aimtable] a:hover{
     animation-play-state:paused;
     font-size:20px;
     background-color:rgba(255,21,43,1);
-    /*transform:rotateX(360deg);
-    -webkit-transform:rotateX(360deg);*/
 }
 
 table[name=aimtable] td,th {
@@ -173,9 +176,21 @@ table[name=aimtable] td,th {
     border:1px solid #000;
 }
 table[name=aimtable] tr{
-    /*background-color:rgba(239,223,238,1);*/
     background-color:rgba(155,66,231,0.25);
 }
 table[name=aimtable] th {
     width:100px;
 }
+
+::-webkit-input-placeholder { /* WebKit browsers */ 
+        color: rgba(0,0,0,0.6); 
+} 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+        color: #000; 
+} 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+        color: #999; 
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+        color: #999; 
+} 
